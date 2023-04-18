@@ -568,6 +568,7 @@ aside{
     /* width: 960px; */
     margin-left: 50px;
     /* margin-right: 100px; */
+    min-height: 100px;
 } 
 
 
