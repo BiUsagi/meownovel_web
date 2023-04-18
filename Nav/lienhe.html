@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEOW NOVEL</title>
+    <link rel="stylesheet" href="../Css/lienhe.css">
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/nav.css">
+    <link rel="stylesheet" href="../Css/giohangdungchung.css">
+    <script src="../js/topnew.js"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="D5nSsibl"></script>
+
+</head>
+<body>
+    <header>
+        <div class="avahead">
+            <a href="../index.html"><img src="../Images/Logo/cat.jpg  " alt=""></a>
+            <p>MEOW NOVEL</p>
+        </div>
+        <div class="stohead">
+            <a id="giohang-head" onclick="show()" ><img src="../Images/Logo/cart-icon.webp" alt=""></a>
+            <div id="slsanpham">0</div>
+            <ul>
+                <li><a href="./dangwky.html"> ĐĂNG KÝ</a></li>
+                <li class="gach"><a href="./dangnhap.html"> ĐĂNG NHẬP</a></li>
+            </ul>
+        </div>
+        <div class="kiemtra">
+            <a href="../Nav/giohang.html">THÔNG TIN CHI TIẾT GIỎ HÀNG</a>
+        </div>
+
+    </header>
+    <nav class="menu">
+        <ul>
+            <li  ><a href="../index.html"> TRANG CHỦ</a></li>
+            <li><a href="./sanpham2.html"  >SẢN PHẨM</a></li>
+            <li><a href="./lienhe.html" class="dangchon">LIÊN HỆ</a></li>
+            <li><a href="./gioithieu.html" >GIỚI THIỆU</a></li>
+        </ul>
+        <label>
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="submit" class="button">
+                <img src="../Images/Logo/1200px-Search_Icon.svg.png" height="10px" width="10px">
+            </button>
+        </label>
+    </nav>
+    <article>
+        <div class="top-new">
+            <p>Các Nhà Xuất Bản, Nhà Phát Hành Nổi Bật</p> 
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)" >
+                <a href=""><img src="../Images/Logo/ipm.png" alt="" ></a>
+                <p>IMP</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)" >
+                <a href=""><img src="../Images/Logo/Logo_nxb_Kim_Đồng.png" alt=""></a>
+                <p>Kim Đồng</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)">
+                <a href=""><img src="../Images/Logo/hikari.jpg" alt=""></a>
+                <p>Hikari</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)">
+                <a href=""><img src="../Images/Logo/sakura.jfif" alt=""></a>
+                <p>Sakura Books</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)">
+                <a href=""><img src="../Images/Logo/skybook.jpg" alt=""></a>
+                <p>Sky Books</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)">
+                <a href=""><img src="../Images/Logo/tre.png" alt=""></a>
+                <p>Nxb Trẻ</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)">
+                <a href=""><img src="../Images/Logo/tsuki.png" alt=""></a>
+                <p>Tsuki</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)">
+                <a href=""><img src="../Images/Logo/amak.png" alt=""></a>
+                <p>Amak Books</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)">
+                <a href=""><img src="../Images/Logo/thaiha.jpg" alt=""></a>
+                <p>Thái Hà</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)">
+                <a href=""><img src="../Images/Logo/nhânm.png" alt=""></a>
+                <p>Nhã Nam</p>
+            </div>
+            <div class="pic" onmouseover="noilen(this)" onmouseout="haxuong(this)">
+                <a href=""><img src="../Images/Logo/van hoc.png" alt=""></a>
+                <p>Văn Học</p>
+            </div>
+        </div>
+        
+        <!-- gio hang -->
+        <div id="storeee">
+            <div id="sto-thongtinchitiet"></div>
+            <div id="sto-trong"></div>
+            <div id="sto-tong">
+                <h4>TỔNG TIỀN:</h4>
+                <div id="tong-tien">0₫</div>
+            </div>
+            <div id="sto-thaotac">
+                <a href="./giohang.html"><button id="thaotac-01">XEM GIỎ HÀNG</button></a>
+                <button id="thaotac-02">THANH TOÁN</button>
+            </div>
+        </div>
+
+        <div class="lienhe">
+            <h3>LIÊN HỆ</h3>
+            <div class="lh-01">
+                <p>MEOW NOVEL shop</p>
+            </div>
+            <div class="thongtinlh">
+                <p>Địa chỉ: 9 Hà Văn Tính, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng</p>
+                <p>Email: tubanovel@gmail.com</p>
+                <p>SDT: 0343561287</p>
+                <p>Fb: facebook.com/meowwnovel</p>
+            </div>
+
+            <div class="fb-viti">
+                <div class="fb-page" data-href="https://www.facebook.com/meowwnovel" 
+                    data-tabs="" 
+                    data-width="" 
+                    data-height="" 
+                    data-small-header="false" 
+                    data-adapt-container-width="false" 
+                    data-hide-cover="false" 
+                    data-show-facepile="true"
+                    data-lazy="true"><blockquote cite="https://www.facebook.com/meowwnovel" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/meowwnovel">Meow Novel</a></blockquote>
+                </div>
+            </div>
+           
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15335.863656428448!2d108.15811918608401!3d16.067258500707286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421906501f5edf%3A0xd80935dfa1dcebd0!2zS8O9IHTDumMgeMOhIHBow61hIHTDonk!5e0!3m2!1sen!2s!4v1679823618387!5m2!1sen!2s" 
+            width="45%  " 
+            height="500" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <form action="" Method=”get” name="myform" onsubmit="return checkform()">
+            <fieldset>
+                <legend>Form</legend>
+                <div class="fm-gp">
+                    <label>Họ và tên: <br>
+                        <input type="text" class="fm-cl" id="hovaten" name="hovaten" placeholder="Không bắt buộc là tên thật...">
+                    </label><br>
+                </div>
+                <div class="fm-gp">
+                    <label>Email: <br>
+                        <input type="text" class="fm-cl" id="email" name="email" placeholder="Chúng tôi sẽ phản hồi lại cho bạn qua địa chỉ này...">
+                    </label><br>
+                </div>
+                <div class="fm-gp">
+                    <label>Nội dung: <br>
+                        <textarea id="textnote" name="textnote" class="fm-cl" cols="30" rows="10" placeholder="Nhập nội dung liên hệ của bạn ở đây..."></textarea>
+                    </label><br>
+                </div>
+                <div id="checkform"></div>
+                <div class="fm-gp">
+                    <button type="submit" class="fm-bn">Gửi</button>
+                    <button type="reset" class="fm-bn">Nhập lại</button>
+                </div>
+            </fieldset>
+        </form>
+    </article>
+    <aside></aside>
+    <footer>
+        <div class="foo-01">
+            <img src="../Images/Logo/cat.jpg" alt="" width="70px">
+            <p>MEOW NOVEL</p>
+        </div>
+        <div class="thongtinfoo">
+            <p>Địa chỉ: 9 Hà Văn Tính, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng</p>
+            <p>Email: tubanovel@gmail.com</p>
+            <p>SDT: 0343561287</p>
+            <p>Fb: facebook.com/sonthichnovel</p>
+        </div>
+
+        <div class="foo-nhantt">
+            <h4>ĐĂNG KÝ NHẬN TIN</h4>
+            <p>Hãy nhập địa chỉ email của bạn vào ô dưới đây để có thể nhận được tất cả các tin tức mới nhất của MEOW NOVEL về các sản phẩm mới, các chương trình khuyến mãi mới. MEOW NOVEL xin đảm bảo sẽ không gửi mail rác, mail spam tới bạn.</p>
+            <form>
+                <label>
+                    <input type="text" placeholder="Nhập email của bạn tại đây...">
+                    <button type="submit">Gửi</button>
+                </label>
+            </form>
+        </div>
+        <div id="backtop">
+            <img src="../Images/Logo/fighter2.png" width="">
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<script>
+    function checkform(){
+        var name = document.myform.hovaten.value;
+        var email = document.myform.email.value;
+        var note = document.myform.textnote.value;
+
+        if(name == "" || name == null){
+            message("Vui lòng điền họ và tên!!");
+            return false;
+        }
+
+        if(email == ""){
+            message("Vui lòng điền email!!");
+            return false;
+        }
+        // if(!checkEmail(email)){
+        //     message("Nhập sai định dạng email!!");
+        //     return false;
+        // }
+
+        if(note == ""){
+            message("Vui lòng nhập nội dung!!");
+            return false;
+        }
+    }
+
+    function message(m){
+        document.getElementById("checkform").innerHTML = m;
+    }
+    function chekEmail(e){
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(e);
+    }
+
+</script>
+<script src="../js/giohangdungchung.js"></script>
+<script src="https://uhchat.net/code.php?f=a85e4f"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('#backtop').fadeIn();
+            } else {
+                $('#backtop').fadeOut();
+            }
+        });
+        $('#backtop').click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+        });
+    });
+</script>

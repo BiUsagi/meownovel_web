@@ -1,0 +1,102 @@
+/* nxb noi bat */
+.top-new{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 110px;
+}
+.top-new>p{
+    font-size: 23px;
+    padding-left: 10px;
+}
+.top-new>.pic>a>img{
+    width: 100px;
+    height: 100px;
+}
+.top-new .pic{
+    float: left;
+    margin-right: 17px;
+}
+.top-new>.pic>p{
+    text-align: center;
+    margin-top: 5px;
+}
+.top-new a{
+    text-decoration: none;
+    color: black;
+}
+.top-new a:hover{
+    color: #B49149;
+}
+
+/* form */
+.container h1{
+    text-align: center;
+}
+.container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    resize: vertical;
+    padding:15px;
+    border:0;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+.container input[type=text]:focus, input[type=password]:focus{
+    outline: none;
+}
+.container hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+.container button {
+    background-color: #b44d49;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.container button:hover {
+    opacity:1;
+}
+.container .signupbtn {
+    float: left;
+    width: 100%;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}
+.container {
+    width: 30%;
+    margin-top: 180px;
+    margin-left: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.boc-tt{
+    box-shadow: 0 3px 5px lightgray;
+    padding: 30px;
+}
+form>p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form>p>a{
+    color: #b44d49;
+    text-decoration: none;
+}
+form{
+    margin-bottom: 100px;
+}
+
+#checkform{
+    color: #b44d49;
+    font-size: 15px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,56 @@
+:root{
+    --red: #B44D49;
+    --yellow: #B49149;
+    --white: #fff;
+    --light: #eeeded;
+}
+
+.menu{
+    padding-left: 80px;
+    /* background-color: gray; */
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.menu>ul>li{
+    display: inline-block;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 25px;
+    font-size: 15px;
+}
+.menu>ul>li>a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: black;
+}
+.menu>ul>li>a:hover{
+    border-bottom: 3px solid var(--yellow);
+    text-decoration: none;
+    color: rgb(200, 171, 5);
+}
+.menu .dangchon{
+    border-bottom: 3px solid var(--yellow);
+    color: rgb(200, 171, 5);
+}
+.menu>label{
+    position: absolute;
+    right: 150px;
+    top: 16.6%;
+}
+.menu>label>input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: none;
+    padding: 10px;
+}
+.menu .button{
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    padding-top: 0px;
+}
