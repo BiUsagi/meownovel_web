@@ -1,6 +1,4 @@
 document.getElementById("storeee").style.display = "none";
-
-
 var giohang = new Array();
 
 
@@ -63,6 +61,8 @@ function themspvaogio(x){
     document.getElementById("sto-trong").classList.add("none1");
     showsoluong();
 
+    // luu gio hang
+    sessionStorage.setItem("giohang", JSON.stringify(giohang));
 }
 
 
