@@ -91,7 +91,8 @@ function showmcart(){
     
     document.getElementById("tong-tien").innerHTML = tongt;
 }
-   
+
+
 function themspvaogio(x){
     var xx = document.getElementById("storeee");
     if(xx.style.display == "block"){
