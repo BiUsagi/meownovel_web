@@ -1,23 +1,96 @@
-.top-new{
+
+.Banner {
+    position: relative;
+  }
+  
+  .Banner > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(60%);
+  }
+  
+  .thongtin-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #tg{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+}
+  .Banner h3 {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-bottom: 3px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .Banner p {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .top-new{
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 110px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .top-new>p{
     font-size: 23px;
     padding-left: 10px;
+    flex-basis: 100%;
 }
+
+.top-new>.pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 17px;
+}
+
 .top-new>.pic>a>img{
     width: 100px;
     height: 100px;
 }
-.top-new .pic{
-    float: left;
-    margin-right: 17px;
-}
+
 .top-new>.pic>p{
     text-align: center;
     margin-top: 5px;
 }
+
 .top-new a{
     text-decoration: none;
     color: black;
@@ -26,138 +99,186 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.new-spm {
+    height: 430px;
+    width: 260px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }
+  
  
-
-.Banner>img{
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    filter: brightness(60%);
-}
-.Banner>h3{
-    /* text-align: center; */
-    top: 55%;
-    left: 34.5%;
-    position: absolute;
-    padding-top: 20px;
-    font-size: 80px;
-    font-weight: bold; 
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    border-bottom: 3px solid white;
-}
-.Banner>p{
-    top: 75%;
-    left: 38%;
-    position: absolute;
-    padding-top: 20px;
-    font-size: 40px;
-    font-weight: bold; 
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    
-}
-
-
-
-
-
-.new-sp>p{
+  
+  .new-sp > p {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 15px;
     padding-top: 10px;
     border-bottom: 1px dotted gray;
-}
-.new-sp{
-    /* background-color: aquamarine; */
-    margin-left: 150px;
-    margin-right: 130px;
+    flex-basis: 100%;
+  }
+  
+  .new-sp {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
-}
-@keyframes bg-cl {
-    0.5%{
-        margin-top: -7px;
-    }
-    100%{
-        margin-top: -7px;
-    }
-}
-
-.new-sp .bg-cl:hover{
-    animation-name: bg-cl;
-    animation-duration: 100s;
-}
-
-.new-sp .new-spm{
+  }
+  
+  
+  .new-spm {
     height: 430px;
-    /* background-color: gray; */
     width: 260px;
     margin-bottom: 30px;
     float: left;
     margin-left: 40px;
-}
-.new-sp .new-spm>a>img{
+  }
+  
+  .new-spm > a > img {
     width: 260px;
     height: 360px;
     object-fit: cover;
-}
-.new-sp .new-spm>p{
+  }
+  
+  .new-spm > p {
     font-size: 15px;
-    text-decoration: none; 
+    text-decoration: none;
     color: black;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     width: 220px;
     margin-left: 20px;
-    /* background-color: #B49149; */
-} 
-.new-sp .new-spm>p>a:hover{
+  }
+  
+  .new-spm > p > a:hover {
     font-size: 15px;
-    text-decoration: none; 
+    text-decoration: none;
     color: #B49149;
-}
-.new-sp .new-spm>p{
+  }
+  
+  .new-spm > p {
     text-align: center;
     font-size: 15px;
-    text-decoration: none; 
-}
-.new-sp .new-spm>.gia{
+    text-decoration: none;
+  }
+  
+  .new-spm > .gia {
     color: rgb(229, 4, 4);
     text-align: center;
     margin-top: -10px;
-}
-.new-spm del{
+  }
+  
+  .new-spm del {
     color: gray;
     font-size: small;
     padding-left: 15px;
-}
+  }
 
-.new-sp input{
-    float: none;
-    margin-left: 45%;
-    width: 10%;
+
+
+  .new-sp .new-spm {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .new-sp .new-spm:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+  }
+  
+ 
+
+
+  
+
+
+  @media (max-width: 1415px) {
+    .new-sp {
+      align-items: center;
+      margin-left: 20vh;
+      margin-right: 20vh;
+    }
+  }
+
+  @media (max-width: 1220px) {
+    .new-sp {
+      align-items: center;
+      margin-left: 15vh;
+      margin-right: 15vh;
+    }
+  }
+
+  @media (max-width: 1120px) {
+    .new-sp {
+      align-items: center;
+      margin-left: 2vh;
+      margin-right: 2vh;
+    }
+  }
+
+  @media (max-width: 920px) {
+    .new-sp {
+      align-items: center;
+      margin-left: 10vh;
+      margin-right: 10vh;
+    }
+  }
+
+
+  @media (max-width: 880px) {
+    .new-sp {
+      align-items: center;
+      margin-left: 6vh;
+      margin-right: 6vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .new-sp {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.xtbt{
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 40px;
     padding: 5px;
     padding-top: 10px;
     border: none;
     background-color: white;
     box-shadow: 0 0 2px gray;
 }
-
-/* .new-sp .button2{
-    margin-left: 21%;
-    width: 10%;
-    padding: 5px;
-    padding-top: 10px;
-    border: none;
-    background-color: white;
-    box-shadow: 0 0 2px gray;
-} */
-
-
 
 .xtbt:hover{
     animation-name: xtbt;
@@ -177,15 +298,6 @@
 }
 
 
-
-/* Thoi gian */
-.Banner iframe{
-    position: absolute;
-    top: 700px;
-    left: 35%;
-    width: 30%;
-    /* background-color: #B49149; */
-}
 
 
 

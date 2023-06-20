@@ -25,5 +25,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
-
+// Thêm chức năng tự động chạy slide sau mỗi 3 giây
+setInterval(function() {
+  plusSlides(1);
+}, 5000);

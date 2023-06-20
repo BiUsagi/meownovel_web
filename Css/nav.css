@@ -4,10 +4,10 @@
     --white: #fff;
     --light: #eeeded;
 }
+/* 
 
 .menu{
     padding-left: 80px;
-    /* background-color: gray; */
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
 }
@@ -53,4 +53,122 @@
     border: none;
     border-radius: 5px;
     padding-top: 0px;
+} */
+
+
+
+
+
+.menu {
+    padding-left: 5%;
+    padding-right: 5%;;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+  
+  .menu > ul {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .menu > ul > li {
+    /* flex-basis: 25%; */
+    display: inline-block;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 5%;
+    font-size: 15px;
+  }
+  
+  .menu > ul > li > a {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu > ul > li > a:hover {
+    border-bottom: 0.3vh solid var(--yellow);
+    text-decoration: none;
+    color: rgb(200, 171, 5);
+  }
+  
+  .menu .dangchon {
+    border-bottom: 0.3vh solid var(--yellow);
+    color: rgb(200, 171, 5);
+  }
+  
+  .menu > label {
+    padding-right: 4%;
+  }
+  
+  .menu > label > input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: none;
+    padding: 1vh;
+  }
+  
+  .menu .button {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    padding-top: 0px;
+  }
+
+
+  @media screen and (max-width: 980px) {
+    .menu {
+      /* flex-direction: column; */
+      align-items: flex-start;
+    }
+  
+    .menu > ul {
+      margin-bottom: 2vh;
+      flex-basis: 100%;
+    }
+    .menu > ul > li {
+        flex-basis: 20%;
+        font-size: 2vh;
+    }
+    .menu > label {
+      margin-top: 0;
+      flex-basis: 100%;
+    }
+    .menu > label > input {
+        margin: 2vh 0 2vh 8vh;
+        width: 70%;
+    }
+  }
+
+  
+  @media screen and (max-width: 520px) {
+    .menu {
+      /* flex-direction: column; */
+      align-items: flex-start;
+    }
+  
+    .menu > ul {
+
+      margin-bottom: 2vh;
+      flex-basis: 100%;
+    }
+    .menu > ul > li{
+        font-size: 1.6vh;
+        flex-basis: 20%;
+    }
+  
+    .menu > label {
+      margin-top: 0;
+    }
+  }
