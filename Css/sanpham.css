@@ -1,49 +1,70 @@
 
 
-/* nxb noi bat */
 .top-new{
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 110px;
+    padding-left: 16vh;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .top-new>p{
     font-size: 23px;
-    padding-left: 10px;
+    flex-basis: 100%;
 }
+
+.top-new>.pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 17px;
+}
+
 .top-new>.pic>a>img{
     width: 100px;
     height: 100px;
 }
-.top-new .pic{
-    float: left;
-    margin-right: 17px;
-}
+
 .top-new>.pic>p{
     text-align: center;
     margin-top: 5px;
 }
+
 .top-new a{
     text-decoration: none;
     color: black;
 }
-.top-new a:hover{
-    color: #B49149;
+
+
+@media (max-width: 600px) {
+  .top-new{
+    padding-left: 13vh;
 }
+.top-new>p{
+  flex-basis: 80%;
+}
+}
+
+.boxchungaa {
+    display: flex;
+}
+
 
 
 /* aside */
 aside{
-    /* background-color: aqua; */
-    width: 400px;
-    height: 1900px;
-    margin-top: 180px;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    
 }
 .muc-as{
     /* background-color: #0963CC; */
     padding-left: 120px;
     position: sticky;
     top: 0;
-     
+
 }
 .muc-as>h3{
     /* background-color: #0963CC; */
@@ -69,41 +90,34 @@ aside{
 .muc-as a:hover{
     color: #B49149
 }
-
-/* aside  */
 .muc-as .as-av{
     border-right: 4px solid #B49149;
 }
 .muc-as .as-av a{
     color: #B49149;
 }
+/* ket thuc aside */
 
 
-/* article */
-/* article{ */
-    /* height: 2000px;
-    width: 75%;
-    background-color: aqua;
-    float: right; */
-/* } */
-
-/* san pham */
+/* sanpham */
 .new-sp>p{
     font-size: 20px;
     padding-bottom: 15px;
     padding-top: 10px;
     border-bottom: 1px dotted gray;
+    flex-basis: 100%;
+    padding-left: 10vh;
 }
 .new-sp{
-    /* background-color: aquamarine; */
-    margin-right: 130px;
     font-family: Arial, Helvetica, sans-serif;
-    float: right;
+    display: flex;
     width: 65%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
 }
 .new-sp>.new-spm{
     height: 350px;
-    /* background-color: aqua; */
     width: 200px;
     margin-bottom: 30px;
     float: left;
@@ -146,7 +160,6 @@ aside{
     font-size: small;
     padding-left: 15px;
 }
-
 .new-sp input{
     float: none;
     margin-left: 45%;
@@ -164,13 +177,44 @@ aside{
 }
 
 
+
+@media (max-width: 850px) {
+    aside{
+        display: none;
+    }
+  }
+
+/* ket thuc san pham */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* chuyen trang */
 .nexttr{
-    float: left;
-    /* background-color: aliceblue; */
-    margin-left: 450px;
-    margin-bottom: 60px;
-    margin-top: 10px;
+    flex-basis: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
 }
 .nexttr a{
     text-decoration: none;
@@ -242,49 +286,6 @@ aside{
     text-align: center;
     margin: 5px;
 }
-/* 
-#thao-tacsp1{
-    position: absolute;
-    margin-left: 180px;
-    margin-top: 150px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    line-height: 0px;
-    border-radius: 50%;
-    width: 40px;
-    background-color: #d2ab5c;
-    text-align: center;
-    display: none;
-}
-#thao-tacsp2{
-    position: absolute;
-    margin-left: 180px;
-    margin-top: 195px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    line-height: 0px;
-    border-radius: 50%;
-    width: 40px;
-    background-color: #d2ab5c;
-    text-align: center;
-    display: none;
-}
-
-#thao-tacsp3{
-    position: absolute;
-    margin-left: 180px;
-    margin-top: 240px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    line-height: 0px;
-    border-radius: 50%;
-    width: 40px;
-    background-color: #d2ab5c;
-    text-align: center;
-    display: none; 
-}*/
-
-
 
 /* sanpham */
 #san-pham{
@@ -292,11 +293,8 @@ aside{
     left: 0px;
     top: 210px;
     background-color:   white;
-    /* background-color: #313131; */
     margin-top: 190px;
     width: 100%;
-    /* height: 2050px; */
-    /* margin-left: 10%; */
 
 }
 #san-pham button{
@@ -499,7 +497,7 @@ aside{
     position: absolute;
     top: 100px;
     right: 35px;
-    width: 20%;
+    width: 300px;
     /* min-height: 150px; */
     max-height: 600px;
     background-color: white;
