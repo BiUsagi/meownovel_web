@@ -1,11 +1,167 @@
 body{
     margin: 0;
 }
-header{
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16vh;
+}
+
+
+#slsanpham{
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background-color: #B44D49;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    position: relative;
+    top: -25px;
+    right: 10px;
+}
+
+
+
+.avahead {
+    display: flex;
+    align-items: center;
+    padding-left: 7vw;
+    flex: 1 1 auto;
+}
+.avahead > a > img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+.avahead > p {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+.stohead {
+    padding-right: 7vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.stohead > a > img {
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+.kiemtra > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+.kiemtra {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.kiemtra > a {
+    text-decoration: none;
+    color: #b44d49;
+}
+
+.kiemtra > ul > li {
+    margin-left: 15px;
+  }
+  
+.kiemtra> ul > li > a {
+    text-decoration: none;
+    color: black;
+  }
+  
+.kiemtra > ul > li > a:hover {
+    text-decoration: none;
+    color: rgb(214, 186, 4);
+}
+
+
+
+ /* mobile */
+ @media (max-width: 520px) {
+    .logotiude {
+        display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header{
     width: 100%;
     height: 16%;
-    /* background-color: rebeccapurple; */
-    /* position: relative; */
 }
 .avahead>a>img{
     width: 70px;
@@ -71,4 +227,7 @@ header{
     text-decoration: none;
     color: #b44d49;
 }
+ */
 
+
+ 

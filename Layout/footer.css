@@ -1,24 +1,3 @@
-#backtop{
-    color: #0963CC;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
-    cursor: pointer;
-}
-#backtop>img{
-    width: 50px;
-    height: 60px;
-}
-
-
-
-
-
-
-
 footer {
     background-color: #313131;
     margin-top: 50px;
@@ -88,7 +67,7 @@ footer {
     color: white;
   }
   
-  /*tablet */
+  /* Footer style for tablet */
   @media (max-width: 768px) {
     footer {
       display: flex;
@@ -139,9 +118,24 @@ footer {
     }
   }
   
-  /* mobile */
+  /* Footer style for mobile */
   @media (max-width: 480px) {
     .foo-nhantt {
       margin-right: 0;
     }
   }
+  #backtop{
+    color: #0963CC;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+#backtop>img{
+    width: 50px;
+    height: 60px;
+}
+
