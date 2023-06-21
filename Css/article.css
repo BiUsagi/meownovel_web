@@ -66,6 +66,9 @@
     padding-left: 16vh;
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    padding-right: 16vh;
+    justify-content: space-between;
 }
 
 .top-new>p{
@@ -98,10 +101,12 @@
 
 @media (max-width: 600px) {
   .top-new{
-    padding-left: 13vh;
+    padding-left: 1vh;
+    justify-content: space-around;
+    padding-right: 1vh;
 }
 .top-new>p{
-  flex-basis: 80%;
+  flex-basis: 100%;
 }
 }
 
