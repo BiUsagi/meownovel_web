@@ -9,22 +9,17 @@
     top: 100px;
     right: 35px;
     width: 300px;
-    /* min-height: 150px; */
     max-height: 600px;
     background-color: white;
-    /* background-color:  #B49149; */
     box-shadow: 0 5px 5px gray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    /* font-weight: normal; */
-    /* display: none; */
 }
 
 #sto-tong{
     width: 88%;
     height: 40px;
     margin-left: 6%;
-    /* background-color: #B44D49; */
     border-top: 3px black solid;
     margin-top: 20px;
 }
@@ -95,7 +90,7 @@
 }
 #sto-thongtinchitiet{
     max-height: 460px;
-    overflow: auto;
+    overflow: auto;ko9
     margin: 20px 0 25px 6%; 
 }
 #sto-trong{
