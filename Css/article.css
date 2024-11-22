@@ -67,7 +67,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    padding-right: 16vh;
+    padding-right: 15vh;
     justify-content: space-between;
 }
 
