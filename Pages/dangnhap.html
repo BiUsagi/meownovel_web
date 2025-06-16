@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../Css/nav.css">
     <link rel="stylesheet" href="../Css/giohangdungchung.css">
 
-    <script src="../js/formdk.js"></script>
+    <script src="../js/formdn.js"></script>
     <script src="../js/topnew.js"></script>
 </head>
 <body>
@@ -21,10 +21,10 @@
         </div>
 
         <div class="kiemtra">
-            <a href="/Nav/giohang.html">THÔNG TIN CHI TIẾT GIỎ HÀNG</a>
+            <a href="/Pages/giohang.html">THÔNG TIN CHI TIẾT GIỎ HÀNG</a>
             <ul>
-                <li><a href="/Nav/dangwky.html"> ĐĂNG KÝ</a></li>
-                <li class="gach"><a href="/Nav/dangnhap.html"> ĐĂNG NHẬP</a></li>
+                <li><a href="/Pages/dangwky.html"> ĐĂNG KÝ</a></li>
+                <li class="gach"><a href="/Pages/dangnhap.html"> ĐĂNG NHẬP</a></li>
             </ul>
         </div> 
 
@@ -97,26 +97,24 @@
             </div>
         </div>
 
-        <form action="dangnhap.html" onsubmit="return chekform()"  method="get" name="myform">
+        <form action=""  onsubmit="return chekform()" name="myform" method="get">
             <div class="container">
-                <h1>ĐĂNG KÝ</h1>
+                <h1>ĐĂNG NHẬP</h1>
                 <hr>
                 <div class="boc-tt">
                     <label for="tentk"><b>Tên Tài Khoản</b></label>
-                        <input type="text" placeholder="Đây sẽ là tên đang nhập của bạn" name="tentk" id="tentk">
-                    <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Nhập Email" name="email" id="email">
+                        <input type="text" placeholder="Nhập tên tài khoản" id="tentk" name="tentk">
                     <label for="matkhau"><b>Mật Khẩu</b></label>
-                        <input type="password" placeholder="Nhập Mật Khẩu" name="matkhau" id="matkhau">
-                    <label for="nhaplai"><b>Nhập Lại Mật Khẩu</b></label>
-                        <input type="password" placeholder="Nhập Lại Mật Khẩu" name="nhaplai" id="nhaplai">
+                        <input type="password" placeholder="Nhập Mật Khẩu" id="matkhau"  name="matkhau">
+                        <input type="checkbox" checked="checked" name="ghinho" style="margin-bottom:15px"> Nhớ Đăng Nhập
+                    </label>
                     <div id="checkform"></div>
                     <div class="clearfix">
-                        <button type="submit" class="signupbtn" id="signupbtn" >Đăng Ký</button>
-                    </div>
+                    <button type="submit" class="signupbtn">Đăng Nhập</button>
+                </div>
                 </div>
             </div>
-            <p class="login">Nếu bạn đã có tài khoản, hãy chọn <a href="./dangnhap.html">Đăng nhập.</a></p>
+            <p>Nếu bạn chưa có tài khoản, hãy chọn <a href="./dangwky.html">Đăng ký.</a></p>
      </form>
 
 
@@ -134,9 +132,6 @@
                 <button id="thaotac-02">THANH TOÁN</button>
             </div>
         </div>
-
-        
-
 
 
     </article>
@@ -172,7 +167,6 @@
 </body>
 </html>
 <script src="../js/giohangdungchung.js"></script>
-
 
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
